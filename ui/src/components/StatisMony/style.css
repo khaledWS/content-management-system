@@ -1,0 +1,27 @@
+.statis-mony {
+  padding-top: 30px;
+}
+
+.StatisMony-cntainer {
+  display: flex;
+  justify-content: center;
+}
+
+.single-stat {
+  padding: 30px;
+}
+
+.single-stat-text {
+  color: #71b43f;
+  font-size: 34px;
+  padding: 0;
+  margin: 0;
+}
+
+.single-stat-number {
+  color: #5e682d;
+  font-size: 28px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
