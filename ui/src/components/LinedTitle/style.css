@@ -1,0 +1,25 @@
+.lined-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.lined-title-content {
+  padding: 0 25px;
+  color: #71b43f;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-size: 1.25em;
+}
+
+.lined-title div {
+  display: flex;
+  align-items: center;
+  width: 37%;
+}
+
+.lined-title div span {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(184, 181, 181);
+}
