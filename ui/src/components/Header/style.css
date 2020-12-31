@@ -1,0 +1,63 @@
+.headerImage {
+  width: 200px;
+  height: 120px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+}
+
+.headerImage-small {
+  width: 250px;
+  height: 70px;
+}
+
+.topPart {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.headerBtns {
+  display: flex;
+  align-items: center;
+}
+
+.header-Btn {
+  margin: 5px;
+  padding: 7px;
+}
+
+.header-Btn button {
+  border: 1px solid #3684ba;
+  color: #3684ba;
+  background: #fff;
+  border-radius: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.header-Btn button:hover {
+  color: #fff;
+  background-color: #3684ba;
+}
+
+/* .header-Btn-border {
+  border-left: 1px solid gray;
+} */
+
+.header-Btn-margin-right {
+  margin-right: 0;
+}
+
+.header-Btn-margin-left {
+  margin-left: 0;
+}
+
+.header-donation-btn {
+  position: relative;
+}
+
+.header-donation-btn:hover > .box {
+  display: block;
+}
