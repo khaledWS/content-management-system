@@ -1,0 +1,83 @@
+.news-section {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.news-opinion {
+  width: 33%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.news-slider {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Carousel .Button {
+  margin: 0 -10px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
+.MuiIconButton-root {
+  border-radius: 0 !important;
+  overflow: hidden;
+}
+
+.Carousel {
+  display: flex;
+}
+.Carousel .Button {
+  top: 25%;
+  width: 120%;
+  height: 50%;
+}
+
+.MuiTouchRipple-root {
+  display: none;
+}
+
+/* opinion-section */
+
+.opinion-section {
+  border: 1px solid rgb(202, 200, 200);
+  text-align: right;
+  height: 80%;
+  padding-left: 50px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.opinion-section p {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.opinion-options {
+  margin-right: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.opinion-options label {
+  padding-left: 20px;
+}
+
+.send-btn button {
+  background-color: blue;
+  border: none;
+  border-radius: none;
+  outline: none;
+  padding: 10px 20px;
+  margin-top: 50px;
+  cursor: pointer;
+}

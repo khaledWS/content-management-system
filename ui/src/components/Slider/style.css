@@ -1,0 +1,12 @@
+.slide-container {
+  backface-visibility: hidden;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.slide-image {
+  width: 100%;
+  height: 55vh;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
