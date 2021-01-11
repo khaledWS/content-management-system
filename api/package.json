@@ -1,0 +1,33 @@
+{
+  "name": "tamkeen",
+  "version": "1.0.0",
+  "description": "tamkeen - Admin Panel",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/routesTest.js | tap-spec",
+    "start:watch": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamkeemcharity/tamkeen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamkeemcharity/tamkeen/issues"
+  },
+  "homepage": "https://github.com/tamkeemcharity/tamkeen#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "cookie-parser": "^1.4.3",
+    "env2": "^2.2.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "jsonwebtoken": "^8.4.0",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^1.18.6",
+    "pg": "^7.6.1"
+  },
+  "devDependencies": {}
+}
