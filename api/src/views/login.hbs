@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tamkeen - Login</title>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+*{
+margin: 0;
+padding: 0;
+outline: none;
+box-sizing: border-box;
+font-family: 'Raleway', sans-serif;
+}
+
+body{ background: #3598dc; }
+
+#logo{
+  margin-top: 10px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.cont{
+position: relative;
+width: 25%;
+height: 400px;
+padding: 10px 25px;
+margin: 10vh auto;
+background: #fff;
+border-radius: 8px;
+}
+
+.form{ width: 100%; height: 100%; }
+
+h1, h2, .user, .pass{
+text-align: center;
+display: block;
+}
+
+h1{
+color: #606060;
+font-weight: bold;
+font-size: 40px;
+margin: 30px auto;
+}
+
+.user, .pass, .login{
+width: 100%;
+height: 45px;
+border: none;
+border-radius: 5px;
+font-size: 20px;
+font-weight: lighter;
+margin-bottom: 30px;
+}
+
+.user, .pass{ background: #ecf0f1; }
+
+.login{
+color: #fff;
+cursor: pointer;
+margin-top: 20px;
+background: #3598dc;
+transition: background 0.4s ease;
+}
+
+.login:hover{ background: #3570dc; }
+
+@media only screen and (min-width : 280px) {
+.cont{ width: 90% }
+}
+
+@media only screen and (min-width : 480px) {
+.cont{ width: 60% }
+}
+
+@media only screen and (min-width : 768px) {
+.cont{ width: 40% }
+}
+
+@media only screen and (min-width : 992px) {
+.cont{ width: 30% }
+}
+
+h2{ color: #fff; margin-top: 25px; }
+
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center;">
+    <img id='logo' src="img/40402597_449823462183008_733033862388514816_n.png" class="img-circle" alt="User Image">
+  </div>
+    <div class="cont">
+      <div class="form">
+          <h1>تسجيل الدخول</h1>
+          <div class="login">
+			         {{#if err}}
+			         <h3>{{msg}}</h3>
+			         {{/if}}
+			            <form method="post" action='/login'>
+				                <input class='user' type="text" name="email" placeholder="Email" required="required" />
+				                <input class='pass' type="password" name="password" placeholder="Password" required="required" />
+				                <button type="submit" class="btn btn-primary btn-block btn-large login">Login</button>
+			            </form>
+		</div>
+          <!-- <form action='/login'>
+          <input type="text"
+                 class="user"
+                 placeholder="اسم المستخدم"/>
+          <input type="password"
+                 class="pass"
+                 placeholder="كلمة المرور"/>
+          <button type="submit" class="login">تسجيل الدخول</button> -->
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
