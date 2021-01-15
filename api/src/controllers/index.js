@@ -1,6 +1,8 @@
 const express = require('express');
 
 const router = express.Router();
+const cors = require('cors')
+
 const verifyCookie = require('./verifycookie');
 const homepage = require('./homepage');
 const contact = require('./contact');
@@ -18,10 +20,9 @@ const statsAPI = require('./api/stats');
 const usersAPI = require('./api/users');
 const emailsAPI = require('./api/emails');
 
-router.use((req, res, next) => {
-      console.log(req.method, req.path, req.body);
-      next();
-})
+
+router.use(cors())
+
 
 router.get('/', verifyCookie, homepage.showHomepage)
       .get('/news', verifyCookie, news.showNews)
@@ -36,14 +37,14 @@ router.get('/', verifyCookie, homepage.showHomepage)
       .get('/addNews', verifyCookie, addNews.addNews)
 
       .get('/api/getAllUsers', verifyCookie, usersAPI.getAllUsers)
-      
+
       .get('/api/getNews', newsAPI.getAllNews)
       .post('/api/addNews', verifyCookie, newsAPI.addNews)
       .post('/api/editNews', verifyCookie, newsAPI.editNews)
       .post('/api/deleteNews', verifyCookie, newsAPI.deleteNews)
-      
+
       .get('/api/getDonors', verifyCookie, donorsAPI.getAllDonors)
-      .post('/api/addDonors', verifyCookie, donorsAPI.addDonors)
+      .post('/api/addDonors', donorsAPI.addDonors)
       .post('/api/deleteDonor', verifyCookie, donorsAPI.deleteDonors)
 
       .get('/api/getStats', statsAPI.getStats)

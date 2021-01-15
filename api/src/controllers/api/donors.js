@@ -8,6 +8,7 @@ exports.getAllDonors = async (req, res) => {
 exports.addDonors = async (req, res) => {
     const { email, amount } = req.body
     const insertedData = await donorsQuery.addData(email, amount).then(d => d.rows).catch(err => err);
+    console.log({insertedData})
     res.send(insertedData);
 }
 

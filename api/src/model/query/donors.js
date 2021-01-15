@@ -10,7 +10,7 @@ exports.getAllData = () => {
 
 exports.addData = (email, amount) => {
     const sql = {
-      text: `INSERT INTO donors(photo, title, date) VALUES ($1, $2, $3)`,
+      text: `INSERT INTO donors(email, amount) VALUES ($1, $2)`,
       values: [email, amount]
     }
   
